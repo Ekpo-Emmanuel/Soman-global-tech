@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800;900&display=swap&family=Oswald:wght@700&display=swap');
+nav {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px  5em;
+    position: fixed;
+    width: 100%;
+    transition: 0.3s;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0px 5px 14px -6px rgba(255, 0, 0, 0.137);
+}
+nav .logo 
+{
+    position: relative;
+    /* background-color: yellow; */
+}
+nav .logo a {
+    display: block;
+    font-size: 1.4em;
+    font-weight: 700;
+    /* font-family: 'Oswald', sans-serif; */
+    color: var(--red);
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+nav .logo span 
+{
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 100%;
+    background-color: var(--red);
+    transform: translateX(-10px);
+}
+nav .links ul{
+    display: flex;
+}
+nav .links ul li
+{
+    display: flex;
+}
+nav .links {
+    transition: height 0.4s;
+}
+nav .links ul li a
+{
+    padding: 20px 14px;
+    transition: 0.1s ease-in-out;
+    position: relative;
+    color: var(--red);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+nav .links ul li a:hover{
+    color: #fff;
+    background-color: var(--red);
+}
+nav .links ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    background-color: var(--yellow);
+    left: 0;
+    bottom: 5px; 
+    transition: 0.3s ease-in-out;
+    opacity: 0; 
+    transform: translateY(5px);
+    transform: translateX(-1);
+}
+nav .links ul li a:hover::before {
+    opacity: 1;
+    width: 100%;
+    z-index: -1;
+}
+nav .menu 
+{
+    display: flex;
+}
+nav .menu ion-icon {
+    font-size: 30px;
+    padding: 10px;
+    background-color: rgba(209, 209, 209, 0.048);
+    border-radius: 50px;
+    transition: 0.3s;
+    color: var(--red);
+    cursor: pointer;
+}
+nav .menu ion-icon:hover {
+    background-color: var(--red);
+    color: var(--white);
+}
+nav .links ul li .active1
+{
+    background-color: var(--red);
+    color: var(--white);
+    transition: 0.3s ease-in-out;
+}
+nav .links  ul li .active1:hover 
+{
+    background-color: var(--darkred);
+}
+nav .bars 
+{
+    cursor: pointer;
+    display: none;   
+}
+
+@media(max-width: 1000px) 
+{
+    nav {
+        padding: 0 2em;
+    }
+    nav .links ul li a
+    {
+        font-size: 14px;
+    }
+}
+@media(max-width: 850px) 
+{
+    nav {
+        padding: 2em 2em;
+        align-items: center;
+        flex-direction: column;
+        align-items: unset;
+    }
+    nav .links .flex {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    } 
+    nav .links .flex li a 
+    {
+        width: 100%;
+    }
+    nav .bars 
+    {
+        position: absolute;
+        top: 25px;
+        right: 4em;
+        display: block;
+    }
+    .responsive_nav {
+        display: none;
+    }
+    nav .logo a {
+        display: block;
+        font-size: 1em;
+        font-weight: 700;
+    }
+}
+@media (max-width: 500px) {
+    nav .bars 
+    {
+        right: 2em;
+    }
+    nav .links .flex {
+        display: flex;
+        flex-direction: column;
+    } 
+    nav .links .flex li a 
+    {
+        width: 100%;
+        padding: 12px;
+    }
+}

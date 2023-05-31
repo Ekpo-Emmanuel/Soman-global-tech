@@ -1,0 +1,184 @@
+.ahead {
+    margin-top: 5em;
+    height: 90vh;
+    color: var(--white);
+    padding: 6em 8em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    place-content: center;
+    /* background: linear-gradient(342deg, rgba(225,225,0,0.5) 0%, rgba(33,33,33,1) 100%); */
+}   
+.ahead .text span 
+{
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    opacity: .5;
+}
+.ahead .text p 
+{
+    font-size: 5em;
+    line-height: 75px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.ahead .text label 
+{
+    opacity: .9;
+    display: block;
+    font-size: 18px;
+    width: 60%;
+    line-height: 25px;
+}
+.ahead .text a,
+.part3 a 
+{
+    display: block;
+    background-color: var(--white);
+    width: 15em;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    color: var(--black);
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    border: 1px solid var(--red);
+}
+.ahead .text a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 40%;
+    transform: translate(-10px,20px);
+    width: 3px;
+    background-color: var(--red);
+    border-radius: 60px;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+.ahead .text a:hover
+{
+    background-color: var(--yellow);
+}
+.ahead .text a:hover::before,
+.part3 a:hover::before
+{
+    opacity: 1;
+    transform: translate(-20px,20px);
+}
+
+.ahead svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 860px) {
+    .ahead {
+        /* background-color: green; */
+        margin-top: 70px;
+        padding: 0em 5em;
+    }
+    .ahead .text span 
+    {
+        display: block;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        opacity: .9;
+    }
+    .ahead .text p 
+    {
+        font-size: 3.5em;
+        font-weight: 900;
+        line-height: 60px;
+        margin-bottom: 10px;
+    }
+    .ahead .text label 
+    {
+        font-size: 15px;
+        width: 100%;
+    }
+    .ahead .text a
+    {
+        width: 15em;
+        padding: 15px 0px;
+        font-size: 20px;
+        color: var(--black);
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 650px) {
+    .ahead {
+        text-align: center;
+        padding: 0em 4em;
+    }   
+    .ahead .text a 
+    {
+        margin: 20px auto;
+    }
+    .ahead .text p 
+    {
+        font-size: 3em;
+        /* line-height: 40px; */
+    }
+}
+
+
+
+
+@media (max-width: 500px) {
+    .ahead svg {display: none;}
+    .ahead {
+        text-align: left;
+        padding: 0em 2em;
+        height: 70vh;
+    }  
+    .ahead .text span
+    {
+        margin-bottom: 0;
+    } 
+    .ahead .text a 
+    {
+        margin: unset;
+        margin-top: 20px;
+        /* padding: 10px 14px; */
+        /* width: 12em; */
+        font-size: 16px;
+    }
+    .ahead .text p 
+    {
+        font-size: 23px;
+        margin-bottom: 0;
+        line-height: unset;
+    }
+    .ahead .text span 
+    {
+        font-size: 13px;
+    }
+    .ahead .text label 
+    {
+        font-size: 14px;
+    }
+    .ahead .text a::before
+    {
+        transform: translateY(20px);
+        display: none;
+    }
+}

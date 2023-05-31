@@ -1,0 +1,144 @@
+.testimony {
+    padding: 6em 8em;
+    background-color: var(--white);
+}
+.testimony .sec1 {
+    text-align: center;
+    color: var(--black);
+}
+.testimony .sec1 p {
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.testimony .sec1 label {
+    /* font-size: 14px; */
+    opacity: .9;
+}
+.testimony .sec2 
+{
+    margin-top: 100px;
+}
+
+.testimony .sec2 .swiper {
+width: 100%;
+height: 100%;
+cursor:pointer;
+padding: 10px;
+}
+
+.testimony .sec2 .swiper .swiper-slide 
+{
+text-align: center;
+font-size: 18px;
+background: var(--white);
+background-color: #f1f1f1;
+padding: 20px 10px;
+/* Center slide text vertically */
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 4px;
+}
+
+.testimony .sec2 .swiper .swiper-slide img {
+display: block;
+height: 7vh;
+object-fit: cover;
+}
+
+.testimony .sec2 .swiper .swiper-slide {
+    text-align: left;
+    display: block;
+    width: 30%;
+    height: 300px;
+}
+.testimony .sec2 .swiper .swiper-slide .s1 
+{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    place-items: center;
+}
+.testimony .sec2 .swiper .swiper-slide .s1 .img 
+{
+    overflow: hidden;
+    border-radius: 50px;
+}
+.testimony .sec2 .swiper .swiper-slide .s1 .text 
+{
+    margin-left: 10px;
+    display: block;
+}
+.testimony .sec2 .swiper .swiper-slide .s1 .text p 
+{
+    /* font-size: 1.2em; */
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.testimony .sec2 .swiper .swiper-slide .s1 .text span 
+{
+    display: block;
+    font-size: 14px;
+    color: var(--red);
+}
+.testimony .sec2 .swiper .swiper-slide .s2 
+{
+    padding-top: 20px;
+}
+.testimony .sec2 .swiper .swiper-slide .s2 span 
+{
+    display: block;
+    font-size: 14px;
+}
+
+
+
+
+@media (max-width: 1150px) {
+    .testimony 
+    {
+        padding: 4em 2em;
+    }
+}
+@media (max-width: 860px){
+    .testimony 
+    {
+        padding: 4em 2em;
+    }
+    .testimony .sec2 .swiper {
+    cursor:pointer;
+    padding: 0px;
+    /* background-color: red; */
+    }
+    .testimony .sec2 .swiper .swiper-slide 
+    {
+        width: 50%;
+    }
+}
+@media (max-width: 730px){
+
+}
+@media (max-width: 500px),(max-height: 500px){
+    .testimony 
+    {
+        padding: 4em 2em;
+    }
+    .testimony .sec2 .swiper .swiper-slide 
+    {
+        width: 90%;
+    }
+    .testimony .sec1 {
+        text-align: left;
+        display: block;
+    }
+    .testimony .sec1 p {
+        font-size: 2rem;
+    }
+    .testimony .sec1 label {
+        opacity: .9;
+        width: 100%;
+        margin: 0;
+    }
+}  

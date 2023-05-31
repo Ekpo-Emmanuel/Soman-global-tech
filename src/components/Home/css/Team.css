@@ -1,0 +1,130 @@
+.part6 {
+    background-color: var(--white);
+    padding: 6em 8em;
+}
+.part6 .set1 p {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--red);
+}
+.part6 .set1 label {
+    display: block;
+    font-size: 14px;
+}
+.part6 .set2 {
+    margin-top: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.part6 .set2 .row {
+    /* border-radius: 40px; */
+    background-color: #f1f1f1;
+    padding: 20px 20px 50px 20px;
+    display: block;
+    transition: 0.3s;
+    margin: 10px;
+    transition: 0.3s ease-in-out;
+}
+.part6 .set2 .row:hover 
+{
+    background-color: var(--red);
+    color: #fff;
+}
+.part6 .set2 .row .img 
+{
+    height: 170px;
+    overflow: hidden;
+    border-radius: 25px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.part6 .set2 .row img 
+{
+    width: 40vh;
+    transition: 2s ease-in;
+    margin: auto;
+} 
+.part6 .set2 .row .img:hover img 
+{
+    transform: scale(1.3,1.3);
+}
+.part6 .set2 .row .text 
+{
+    /* background-color: red; */
+    display: block;
+}
+.part6 .set2 .row p {
+    font-weight: bold;
+    text-transform: uppercase;
+    column-rule: var(--black);
+    margin-top: 40px;
+}
+.part6 .set2 .row label {
+    font-size: 13px;
+    display: block;
+    color: var(--red);
+    transition: 0.3s;
+}
+.part6 .set2 .row span 
+{
+    margin-top: 20px;
+    display: block;
+    font-size: 12px;
+}
+.part6 .set2 .row:hover label
+{
+    color: #fff;
+}
+
+
+@media (max-width: 1150px) {
+    .part6 
+    {
+        padding: 4em 4em;
+    }
+    .part6 .set2 {
+        padding: 0px;
+        /* background-color: red; */
+    }
+    .part6 .set2 .row {
+        margin: 5px;
+    }
+}
+@media (max-width: 860px){
+    .part6 
+    {
+        padding: 4em 2em;
+    }
+    .part6 .set2 {
+        padding: 0px;
+        flex-wrap: wrap;
+        place-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .part6 .set2 .row {
+        width: 45%;
+        margin: 10px auto;
+    }
+}
+@media (max-width: 730px){
+
+}
+@media (max-width: 500px),(max-height: 500px){
+    .part6 
+    {
+        padding: 4em 1em;
+    }
+    .part6 .set1 {
+        padding: 0em 1em;
+    }
+    .part6 .set1 p {
+        font-size: 2em;
+    }
+    .part6 .set2 .row {
+        width: 90%;
+        margin: 20px;
+    }
+}  

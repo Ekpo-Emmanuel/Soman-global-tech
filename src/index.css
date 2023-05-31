@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,600;1,700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Lora', serif; */
+    background-color: var(--red);
+}
+/* #E01F1F */
+html 
+{
+    scroll-behavior: smooth;
+}
+:root {
+    --white: white;
+    --red: rgb(224, 31, 31);
+    --yellow: rgb(255, 255, 0);
+    --darkred: rgb(204, 29, 29);
+    --black: rgb(28, 28, 28);
+}
